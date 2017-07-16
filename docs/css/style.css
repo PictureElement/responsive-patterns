@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  min-height: 150px;
+  width: 100%;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.yellow {
+  background-color: yellow;
+}

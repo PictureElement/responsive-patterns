@@ -1,0 +1,28 @@
+/* First breakpoint */
+@media screen and (min-width: 450px) {
+  .red {
+    width: 25%;
+  }
+  .green {
+    width: 75%;
+  }
+}
+
+/* Second breakpoint */
+@media screen and (min-width: 550px) {
+  .red, .blue {
+    width: 25%;
+  }
+  .green {
+    width: 50%;
+  }
+}
+
+/* Third breakpoint */
+@media screen and (min-width: 700px) {
+  .flex-container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
