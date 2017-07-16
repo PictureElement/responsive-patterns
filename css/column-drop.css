@@ -1,15 +1,28 @@
-.red {
-  border: 1px solid black;
-  background-color: red;
+/* First breakpoint */
+@media screen and (min-width: 450px) {
+  .red {
+    width: 25%;
+  }
+  .green {
+    width: 75%;
+  }
 }
 
-.green {
-  border: 1px solid black;
-  background-color: green;
+/* Second breakpoint */
+@media screen and (min-width: 550px) {
+  .red, .blue {
+    width: 25%;
+  }
+  .green {
+    width: 50%;
+  }
 }
 
-.blue {
-  border: 1px solid black;
-  background-color: blue;
+/* Third breakpoint */
+@media screen and (min-width: 700px) {
+  .flex-container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
