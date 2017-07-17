@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marios Sofokleous">
-    <title>Mostly Fluid Pattern</title>
+    <title>Layout Shifter Pattern</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mostly-fluid.css">
+    <link rel="stylesheet" href="css/layout-shifter.css">
   </head>
   <body>
-    <h1>Mostly Fluid Pattern</h1>
+    <h1>Layout Shifter Pattern</h1>
     <div style="text-align: center;">
       <a href="index.html">Home</a>
       <a href="column-drop.html">Column Drop</a>
@@ -19,9 +19,10 @@
     </div>
     <div class="flex-container">
       <div class="flex-item red"></div>
-      <div class="flex-item green"></div>
-      <div class="flex-item blue"></div>
-      <div class="flex-item cyan"></div>
+      <div class="flex-container" id="container-2">
+        <div class="flex-item green"></div>
+        <div class="flex-item blue"></div>
+      </div>
       <div class="flex-item yellow"></div>
     </div>
   </body>

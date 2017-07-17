@@ -1,0 +1,29 @@
+.flex-container {
+  /* Make green and blue boxes take up the full width */
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .red {
+    width: 50%;
+  }
+  #container-2 {
+    width: 50%;
+  }
+}
+
+/* Default order value for a flex item is 0 */
+@media screen and (min-width: 600px) {
+  .yellow {
+    width: 25%;
+    order: 0;
+  }
+  #container-2 {
+    width: 50%;
+    order: 1;
+  }
+  .red {
+    width: 25%;
+    order: 2;
+  }
+}
