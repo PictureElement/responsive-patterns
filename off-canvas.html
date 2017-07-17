@@ -12,26 +12,21 @@
     <link rel="stylesheet" href="css/off-canvas.css">
   </head>
   <body>
-    <h1>Off Canvas Pattern</h1>
-    <div style="text-align: center;">
+    <!-- Navigation -->
+    <nav id="drawer" class="red">
+      <!-- Close drawer button. Alternative multiplication sign: &times -->
+      <button type="button" style="cursor: pointer;" onclick="closeNav()" class="closebtn"><i  class="fa fa-times fa-2x" aria-hidden="true"></i></button>
       <a href="index.html">Home</a>
       <a href="column-drop.html">Column Drop</a>
       <a href="mostly-fluid.html">Mostly Fluid</a>
       <a href="layout-shifter.html">Layout Shifter</a>
       <a href="off-canvas.html">Off Canvas</a>
-    </div>
-    <!-- Alternative hamburger sign: &#9776 -->
-    <span style="cursor: pointer;" onclick="openNav()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
-    <!-- Navigation -->
-    <nav id="drawer" class="red">
-      <!-- Alternative multiplication sign: &times -->
-      <i style="cursor: pointer;" onclick="closeNav()" class="fa fa-times fa-2x closebtn" aria-hidden="true"></i>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">Services</a>
     </nav>
     <!-- Main content -->
     <main class="blue">
+      <h1>Off Canvas Pattern</h1>
+      <!-- Open drawer button. Alternative hamburger sign: &#9776 -->
+      <button type="button" class="openbtn" style="cursor: pointer;" onclick="openNav()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
     </main>
     <script>
       /* Add an additional class to the element */
@@ -66,6 +61,5 @@
         */
       }
     </script>
-
   </body>
 </html>
