@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marios Sofokleous">
     <title>Off Canvas Pattern</title>
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/off-canvas.css">
@@ -18,24 +20,50 @@
       <a href="layout-shifter.html">Layout Shifter</a>
       <a href="off-canvas.html">Off Canvas</a>
     </div>
-
-    <!-- The hamburger icon -->
-    <span style="cursor: pointer;" onclick="openNav()">&#9776;</span>
-
+    <!-- Alternative hamburger sign: &#9776 -->
+    <span style="cursor: pointer;" onclick="openNav()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+    <!-- Navigation -->
     <nav id="drawer" class="red">
+      <!-- Alternative multiplication sign: &times -->
+      <i style="cursor: pointer;" onclick="closeNav()" class="fa fa-times fa-2x closebtn" aria-hidden="true"></i>
       <a href="#">About</a>
       <a href="#">Contact</a>
       <a href="#">Services</a>
     </nav>
-
+    <!-- Main content -->
     <main class="blue">
     </main>
-
     <script>
       /* Add an additional class to the element */
       function openNav() {
-        /* The standard JS way to select an element (document.getElementById("ID") */
+        /* The standard JS way to select an element is with: document.getElementById("ID") */
         document.getElementById("drawer").className += " open";
+
+        /* OR */
+
+        /*
+        var navClasses = document.getElementById("drawer").classList;
+        navClasses.add("open");
+        */
+
+        /* OR */
+
+        /*
+        var navClasses = document.getElementById("drawer").classList;
+        navClasses.toggle("open");
+        */
+      }
+      /* The classList property ships with four methods: add, remove, toggle, contains */
+      function closeNav() {
+        var navClasses = document.getElementById("drawer").classList;
+        navClasses.remove("open");
+
+        /* OR */
+
+        /*
+        var navClasses = document.getElementById("drawer").classList;
+        navClasses.toggle("open");
+        */
       }
     </script>
 
