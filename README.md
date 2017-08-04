@@ -1,3 +1,7 @@
+## Status
+
+Completed
+
 ## About
 
 This website demonstrates the most common responsive patterns. The site is
